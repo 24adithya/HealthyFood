@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.food.healthy</groupId>
+	<artifactId>Foodify</artifactId>
+	<packaging>pom</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>FoodHealthify</name>
+	<url>http://maven.apache.org</url>
+	<profiles>
+		<profile>
+			<id>HealthyFood</id>
+			<modules>
+				<module>accounting</module>
+				<module>food</module>
+			</modules>
+		</profile>
+	</profiles>
+	<build>
+		<finalName>Foodify</finalName>
+	</build>
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<org.springframework.version>4.2.0.RELEASE</org.springframework.version>
+		<jetty.version>9.4.6.v20170531</jetty.version>
+	</properties>
+</project>
